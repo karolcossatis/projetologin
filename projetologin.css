@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'sarala', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap');
+
+body {
+    background-color: thistle;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: #fff;
+    width: 80vw;
+    /*height: 87vh;*/
+    display: flex;
+    justify-content:center;    
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px 5px rgb(19, 0, 13);
+    
+
+}
+
+.box1 {
+   /* border: red solid 1px;*/
+    width: 45%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+  
+    align-items: flex-start;
+    gap: 0;
+    
+
+    
+
+}
+.textarea {
+   /* border: yellowgreen solid 1px;*/
+    margin: 0;
+}
+
+.textarea h1 {
+    margin-top: 10px;
+    font-size: 2.5rem;
+    color: rgb(44, 4, 49);
+    font-weight: 800;
+
+}
+
+.textarea h1::before {
+    content: '';
+    display: block;
+    width: 6rem;
+    height: 0.1rem;
+    background-color: #cf8ecf;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+
+}
+
+.imagembox1 {
+  /* border: #cf8ecf solid 1px;*/
+    width: 100%;
+    height: 100%;
+    max-width: 90%;   
+      
+}
+
+
+.textarea p {
+    margin: 5px 0;
+    color: rgba(44, 4, 49, 0.651) ;
+    font-size: 1.2em;
+}
+
+
+.box2 {
+   /* border: blue solid 1px;*/
+    width: 45%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardlogin {
+    background-color: violet;
+    padding: 15px;
+    margin: 10px;
+    width: 75%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-radius: 25px;
+    box-shadow: 0 10px 20px 5px rgb(85, 2, 60);
+     
+   
+}
+
+.inputs {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+}
+
+.inputs input {
+    width: 100%;
+    padding: 0.6em;
+    color: rgb(171, 148, 172);
+    border: none;
+    outline-color: rgb(186, 19, 219);
+    border-radius: 10px;
+}
+
+.inputs label {
+    color: aliceblue;
+}
+
+input::placeholder {
+    color:  rgba(186, 19, 219, 0.534);
+}
+
+button {
+    width: 60%;
+    border-radius: 10px;
+    border: none;
+    padding: 0.6rem;
+    background-color: rgb(241, 209, 245);
+    box-shadow: 0px 10px 40px -12px rgb(82, 4, 82);
+    color: rgba(44, 4, 49, 0.658);
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+button:hover {
+    color: #fff;
+    background-color:rgba(44, 4, 49, 0.658);
+    box-shadow: 0px 15px 20px -5px rgb(0, 0, 0);
+}
+
+.cardlogin h1 {
+    text-transform: uppercase;
+    color: rgba(44, 4, 49, 0.76);
+    
+}
+
+@media only screen and (max-width:950px){
+    .cardlogin{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+   
+    }
+    .box1 h1 {
+        display: none;
+    }
+    
+    .box1 p{
+        display: none;
+    }
+
+    .box1 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+      
+    }
+    .box2 {
+        width: 90%;
+        height: auto;
+    }
+
+    .imagembox1 {
+        width: 70vw;
+        height: auto;
+
+    } 
+    
+    .cardlogin {
+        width: 60vh;
+        height: 100%;
+        padding: 10%
+    }
+
+    .inputs {
+        width: 85%;
+    }
+
+}
